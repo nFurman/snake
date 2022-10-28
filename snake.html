@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>snakey</title>
+  </head>
+  <body>
+    <style>
+      .grid-container {
+        display: grid;
+        justify-content: center;
+      }
+      .item {
+        border: 0.5px solid black;
+        background-color: lightblue;
+      }
+      h1 {
+        text-align: center;
+      }
+      .length {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .shaft {
+        display: flex;
+        position: absolute;
+        width: 50px;
+      }
+      .balls {
+        position: absolute;
+        width: 50px;
+        z-index: 0;
+      }
+      .dick {
+        position: absolute;
+        display: flex;
+        width: 50px;
+        z-index: 1;
+      }
+      .apple {
+        width: 50px;
+      }
+      .death-box {
+        position: absolute;
+        justify-content: center;
+        top: 300px;
+        background-color: plum;
+        width: 240px;
+        height: 140px;
+        border: 3px solid purple;
+        z-index: 10;
+      }
+      .top-div {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+      .death-text {
+        text-align: center;
+        font-style: italic;
+      }
+      .replay-button {
+        text-align: center;
+      }
+      .settings-button {
+        position: absolute;
+        right: 0;
+      }
+    </style>
+    <h1>GOO GOO GINGA</h1>
+    <div id="topDiv" class="top-div"></div>
+    <div id="gridContainer" class="grid-container"></div>
+    <div id="scoreContainer">
+      <p id="length" class="length">Length: 4</p>
+      <p id="highScore" class="length"></p>
+    </div>
+    <script src="snakeScript.js"></script>
+  </body>
+</html>
